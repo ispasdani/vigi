@@ -1,0 +1,30 @@
+.blueBanner {
+  width: 100%;
+  height: 100%;
+  background-color: #1d9bf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .blueBannerLeft {
+    width: 50%;
+    height: 100%;
+    border-right: 2px solid #ffffff;
+
+    .blueBannerLeftTop {
+      width: 100%;
+      height: 60%;
+      border-bottom: 2px solid #ffffff;
+    }
+
+    .blueBannerLeftBottom {
+      width: 100%;
+      height: 40%;
+    }
+  }
+
+  .blueBannerRight {
+    width: 50%;
+    height: 100%;
+  }
+}

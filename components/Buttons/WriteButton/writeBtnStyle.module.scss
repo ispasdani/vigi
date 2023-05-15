@@ -1,0 +1,25 @@
+@use "@vx/styles/stylingVariables.scss";
+
+.writeBtnLink {
+  text-decoration: none;
+  border: 1px solid #f24d2e;
+  color: #ffffff;
+  background-color: #f24d2e;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  transition: 0.2s all ease-in-out;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.writeBtnLink:hover {
+  background-color: #ffffff;
+  color: #f24d2e;
+}
+
+@media (max-width: stylingVariables.$breakpoint-tablet) {
+  .writeBtnLink {
+    margin: 8px 20px;
+  }
+}

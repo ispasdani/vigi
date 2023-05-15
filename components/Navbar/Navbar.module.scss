@@ -1,0 +1,227 @@
+@use "@vx/styles/stylingVariables.scss";
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 8vh;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  .navTitleMobile {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: none;
+  }
+
+  .navbarContent {
+    width: 95%;
+    height: 6.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8e7e7;
+
+    .navCol {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+
+    .navColLinks {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1;
+
+      .navLink {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: #7a7a7a;
+        transition: 0.3s all ease-in-out;
+        position: relative;
+      }
+
+      .navLink:hover {
+        color: black;
+        transform: scale(1.1);
+      }
+
+      .navLink::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #000000;
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+      }
+      .navLink:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+
+    .navColBtns {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex: 1;
+    }
+
+    .navTitle {
+      font-family: "Playfair Display SC", serif;
+      font-weight: 700;
+      font-size: 25px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .navbarSide {
+    position: absolute;
+    top: 6vh;
+    width: 200px;
+    height: auto;
+    padding: 10px 0px;
+    left: -500px;
+    background-color: #ffffff;
+    transition: 0.5s all ease-in-out;
+    border: 1px solid #e8e7e7;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .navColSide {
+      padding: 10px 20px;
+      height: 60px;
+      width: 100%;
+      border-bottom: 1px solid #e8e7e7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .navTitleSide {
+        font-family: "Playfair Display SC", serif;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 2px;
+      }
+    }
+
+    .navColLinksSide {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 10px 20px;
+      border-bottom: 1px solid #e8e7e7;
+      height: 100px;
+      width: 100%;
+
+      .navLinkSide {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        margin: 5px 0px;
+        text-decoration: none;
+        color: #7a7a7a;
+        transition: 0.3s all ease-in-out;
+        position: relative;
+      }
+
+      .navLinkSide:hover {
+        color: black;
+        transform: scale(1.1);
+      }
+
+      .navLinkSide::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #000000;
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+      }
+      .navLinkSide:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+
+    .navColBtnsSide {
+      height: 100px;
+      width: 100%;
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  .navbarToggleLabel {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    z-index: 10;
+
+    span {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 2px;
+      background-color: black;
+      border-radius: 3px;
+      transition: transform 0.3s ease;
+      margin: 5px 0px;
+    }
+  }
+  .navbarToggle {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+  }
+}
+
+@media (max-width: stylingVariables.$breakpoint-tablet) {
+  .navbar {
+    .navbarContent {
+      display: none;
+    }
+
+    .navbarToggleLabel {
+      display: block;
+    }
+    .navbarToggle:checked ~ .navbarSide {
+      left: 5%;
+    }
+    .navTitleMobile {
+      display: block;
+    }
+  }
+}
