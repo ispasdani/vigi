@@ -21,13 +21,13 @@ export const MultiHomeBanners = () => {
 
   return (
     <div className={styles.multiHomeBanners}>
-      <StaticRedBanner display={`${activeDivIndex === 0 ? "flex" : "none"}`} />
-      <StaticBlueStoryBanner
+      <StaticRedBanner display="flex" />
+      {/* <StaticBlueStoryBanner
         display={`${activeDivIndex === 1 ? "flex" : "none"}`}
       />
       <StaticBlackMemberShipBanner
         display={`${activeDivIndex === 2 ? "flex" : "none"}`}
-      />
+      /> */}
     </div>
   );
 };
