@@ -19,16 +19,103 @@
       width: 50%;
       height: 100%;
       border-right: 2px solid #ffffff;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .redBannerTitles {
+        font-family: "Playfair Display SC", serif;
+        font-weight: 700;
+        font-size: 28px;
+        margin: 10px 20px;
+        color: #ffffff;
+      }
+
+      .redBannerInformativeText {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        margin: 10px 20px;
+        color: #ffffff;
+      }
     }
 
     .redBannerTopRight {
       width: 50%;
       height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .redBannerTitles {
+        font-family: "Playfair Display SC", serif;
+        font-weight: 700;
+        font-size: 28px;
+        margin: 10px 20px;
+        color: #ffffff;
+      }
+
+      .redBannerInformativeText {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        margin: 10px 20px;
+        color: #ffffff;
+      }
     }
   }
 
   .redBannerBottom {
     width: 100%;
     height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
+
+  
+@media (max-width: 891px) {
+
+   .redBannerContainer {
+    .redBannerTop {
+      .redBannerTopLeft {
+        .redBannerInformativeText {
+          font-size: 12px;
+        }
+      }
+      .redBannerTopRight {
+        .redBannerInformativeText {
+          font-size: 12px;
+        }
+      }
+    }
+   }
+  }
+
+  @media (max-width: 728px) {
+
+    .redBannerContainer {
+     .redBannerTop {
+       .redBannerTopLeft {
+        .redBannerTitles{
+          font-size: 24px;
+          margin: 10px 10px 5px 10px;
+        }
+         .redBannerInformativeText {
+           margin: 3px 10px;
+         }
+       }
+       .redBannerTopRight {
+        .redBannerTitles{
+          font-size: 24px;
+          margin: 10px 10px 5px 10px;
+        }
+         .redBannerInformativeText {
+          margin: 3px 10px;
+         }
+       }
+     }
+    }
+   }
+ 
