@@ -1,10 +1,10 @@
-.smallLetterShape {
+.squareSmallLetterShape {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    margin: 0px 20px;
+    margin: 0px 10px;
     font-family: "Roboto", sans-serif;
     color: white;
     p {
@@ -108,9 +108,9 @@
     }
   }
   
-  @media (max-width: 401px) {
-    .smallLetterShape {
-      font-size: 10px;
+  @media (max-width: 596px) {
+    .squareSmallLetterShape {
+      color: #ffffff67;
     }
   }
 

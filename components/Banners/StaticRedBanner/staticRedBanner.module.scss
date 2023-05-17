@@ -27,7 +27,7 @@
       .redBannerTitles {
         font-family: "Playfair Display SC", serif;
         font-weight: 700;
-        font-size: 28px;
+        font-size: 25px;
         margin: 10px 20px;
         color: #ffffff;
       }
@@ -51,7 +51,7 @@
       .redBannerTitles {
         font-family: "Playfair Display SC", serif;
         font-weight: 700;
-        font-size: 28px;
+        font-size: 25px;
         margin: 10px 20px;
         color: #ffffff;
       }
@@ -59,6 +59,50 @@
       .redBannerInformativeText {
         font-family: "Roboto", sans-serif;
         font-size: 14px;
+        margin: 10px 20px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .redBannerTopMobile {
+    display: none;
+    height: 60%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #ffffff;
+
+    .redBannerTopMobileSlide {
+      .redBannerTitles {
+        font-family: "Playfair Display SC", serif;
+        font-weight: 700;
+        font-size: 22px;
+        margin: 10px 20px;
+        color: #ffffff;
+      }
+
+      .redBannerInformativeText {
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        margin: 10px 20px;
+        color: #ffffff;
+      }
+    }
+
+    .redBannerTopMobileSlideTwo {
+      .redBannerTitles {
+        font-family: "Playfair Display SC", serif;
+        font-weight: 700;
+        font-size: 22px;
+        margin: 10px 20px;
+        color: #ffffff;
+      }
+
+      .redBannerInformativeText {
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
         margin: 10px 20px;
         color: #ffffff;
       }
@@ -118,4 +162,30 @@
      }
     }
    }
+
+   @media (max-width: 630px) {
+
+    .redBannerContainer {
+     .redBannerTop {
+       display: none;
+     }
+     .redBannerTopMobile {
+      display: flex;
+     }
+    }
+   }
+
+   @media (max-width: 300px) {
+
+    .redBannerContainer {
+     .redBannerTopMobile {
+
+      height: 70%;
+     }
+     .redBannerBottom {
+      height: 30%;
+     }
+    }
+   }
+ 
  

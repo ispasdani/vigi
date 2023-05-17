@@ -15,16 +15,94 @@
       width: 100%;
       height: 60%;
       border-bottom: 2px solid #ffffff;
+
+      .blueBannerTitle {
+        font-family: "Playfair Display SC", serif;
+        font-weight: 700;
+        font-size: 25px;
+        margin: 10px 20px;
+        color: #ffffff;
+      }
+
+      .blueBannerText {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        margin: 10px 20px;
+        color: #ffffff;
+        span {
+          font-family: "Playfair Display SC", serif;
+          margin: 0px 5px;
+        }
+      }
     }
 
     .blueBannerLeftBottom {
       width: 100%;
       height: 40%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
   }
 
   .blueBannerRight {
     width: 50%;
     height: 100%;
+
+    .blueBannerRightAbsolute {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 933px) {
+  .blueBanner {
+    .blueBannerLeft {
+      .blueBannerLeftTop {
+        height: 70%;
+      }
+      .blueBannerLeftBottom {
+        height: 30%;
+      }
+    }
+  }
+}
+
+@media (max-width: 761px) {
+  .blueBanner {
+    .blueBannerLeft {
+      .blueBannerLeftTop {
+        .blueBannerText{
+          font-size: 14px;
+        }
+      }
+      
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .blueBanner {
+    position: relative;
+    .blueBannerLeft {
+      width: 100%;
+      .blueBannerLeftTop {
+       height: 60%;
+       .blueBannerText{
+        font-size: 12px;
+      }
+      }
+      .blueBannerLeftBottom {
+        height: 40%;
+      }
+    }
+
+    .blueBannerRight {
+      width: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 }

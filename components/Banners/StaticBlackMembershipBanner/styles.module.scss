@@ -5,4 +5,170 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .blackBannerLeftSide {
+    min-width: 150px;
+    max-width: 150px;
+    height: 100%;
+    border-right: 2px solid #ffffff;
+
+    .blackBannerLeftSideTop {
+      width: 100%;
+      height: 50%;
+      border-bottom: 2px solid #ffffff;
+    }
+
+    .blackBannerLeftSideBottom {
+      width: 100%;
+      height: 50%;
+    }
+  }
+
+  .blackBannerCenter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .blackBannerTitle {
+      font-family: "Playfair Display SC", serif;
+      font-weight: 700;
+      font-size: 25px;
+      margin: 10px 20px;
+      color: #ffffff;
+    }
+
+    .blackBannerText {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      margin: 10px 20px;
+      color: #ffffff;
+      text-align: center;
+      span {
+        font-family: "Playfair Display SC", serif;
+        margin: 0px 5px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .blackBannerIcon {
+      width: 65px;
+      height: 45px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin: 10px;
+    }
+  }
+
+  .blackBannerRightSide {
+    min-width: 150px;
+    max-width: 150px;
+    height: 100%;
+    border-left: 2px solid #ffffff;
+
+    .blackBannerRightSideTop {
+      width: 100%;
+      height: 50%;
+      border-bottom: 2px solid #ffffff;
+    }
+
+    .blackBannerRightSideBottom {
+      width: 100%;
+      height: 50%;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .staticBlackBanner {
+    .blackBannerCenter {
+      .blackBannerTitle {
+        font-size: 20px;
+      }
+      .blackBannerText {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 726px) {
+  .staticBlackBanner {
+    .blackBannerCenter {
+      .blackBannerTitle {
+        font-size: 22px;
+      }
+      .blackBannerText {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 596px) {
+  .staticBlackBanner {
+    position: relative;
+
+    .blackBannerLeftSide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-right: 2px solid #ffffff67;
+
+      .blackBannerLeftSideTop {
+        border-bottom: 2px solid #ffffff67;
+      }
+    }
+
+    .blackBannerCenter {
+      
+    }
+
+    .blackBannerRightSide {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-left: 2px solid #ffffff67;
+
+      .blackBannerRightSideTop {
+        border-bottom: 2px solid #ffffff67;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .staticBlackBanner {
+
+
+    .blackBannerLeftSide {
+
+      border-right: none;
+
+      .blackBannerLeftSideTop {
+        border-bottom: none;
+      }
+    }
+
+    .blackBannerCenter {
+      
+    }
+
+    .blackBannerRightSide {
+      
+      border-left:none;
+
+      .blackBannerRightSideTop {
+        border-bottom: none;
+      }
+    }
+  }
 }
