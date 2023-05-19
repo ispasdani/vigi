@@ -1,0 +1,116 @@
+.triangleLetterShape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  background-color: transparent;
+  color: #ffffff;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    p {
+      margin: 5px 10px;
+    }
+
+    .flickerLetter {
+      -webkit-animation: flickerLetter 1.5s linear infinite both;
+      animation: flickerLetter 1.5s linear infinite both;
+    }
+    .flickerLetterDelayThree {
+      -webkit-animation: flickerLetter 2s linear infinite both;
+      animation: flickerLetter 2s linear infinite both;
+    }
+    .flickerLetterDelayFour {
+      -webkit-animation: flickerLetter 5s linear infinite both;
+      animation: flickerLetter 5s linear infinite both;
+    }
+    .flickerLetterDelayFive {
+      -webkit-animation: flickerLetter 3.5s linear infinite both;
+      animation: flickerLetter 3.5s linear infinite both;
+    }
+    .flickerLetterDelaySix {
+      -webkit-animation: flickerLetter 2.6s linear infinite both;
+      animation: flickerLetter 2.6s linear infinite both;
+    }
+  }
+}
+
+@-webkit-keyframes flickerLetter {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 0;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 0;
+  }
+  47.99% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  49.01% {
+    opacity: 1;
+  }
+}
+@keyframes flickerLetter {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 0;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 0;
+  }
+  47.99% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  49.01% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1257px) {
+  .triangleLetterShape {
+    div {
+      p {
+        color: #ffffff67;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.dynamicCard {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  width: 95%;
+  height: 250px;
+
+  .dynamicCardTitle {
+    margin: 10px 20px;
+    font-family: "Playfair Display SC", serif;
+    font-size: 25px;
+  }
+
+  .dynamicCardText {
+    margin: 10px 20px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+@media (max-width: 944px) {
+  .dynamicCard {
+    .dynamicCardTitle {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 742px) {
+  .dynamicCard {
+    width: 250px;
+    height: 200px;
+    margin: 0px 10px;
+
+    .dynamicCardTitle {
+      font-size: 18px;
+      margin: 5px 10px;
+    }
+
+    .dynamicCardText {
+      font-size: 14px;
+      margin: 5px 10px;
+    }
+  }
+}

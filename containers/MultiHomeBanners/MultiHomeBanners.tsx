@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import styles from "@vx/components/Banners/multiHomeBannersStyles.module.scss";
-import { StaticRedBanner } from "./StaticRedBanner/StaticRedBanner";
-import { StaticBlueStoryBanner } from "./StaticBlueStoryBanner/StaticBlueStoryBanner";
-import StaticBlackMemberShipBanner from "./StaticBlackMembershipBanner/StaticBlackMemberShipBanner";
+import styles from "@vx/containers/MultiHomeBanners/multiHomeBannersStyles.module.scss";
+import { StaticRedBanner } from "../../components/Banners/StaticRedBanner/StaticRedBanner";
+import { StaticBlueStoryBanner } from "../../components/Banners/StaticBlueStoryBanner/StaticBlueStoryBanner";
+import StaticBlackMemberShipBanner from "../../components/Banners/StaticBlackMembershipBanner/StaticBlackMemberShipBanner";
 
 export const MultiHomeBanners = () => {
   const [activeDivIndex, setActiveDivIndex] = useState(2);
@@ -16,8 +16,6 @@ export const MultiHomeBanners = () => {
 
     return () => clearInterval(intervalId);
   }, []);
-
-  console.log(activeDivIndex)
 
   return (
     <div className={styles.multiHomeBanners}>
