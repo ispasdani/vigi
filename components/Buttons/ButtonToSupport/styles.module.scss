@@ -1,0 +1,23 @@
+@use "@vx/styles/stylingVariables.scss";
+
+.btnToSupport {
+  text-decoration: none;
+  border: 1px solid;
+  border-color: transparent;
+  padding: 5px 10px;
+  margin: 20px;
+  transition: 0.2s all ease-in-out;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.btnToSupport:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 805px) {
+  .btnToSupport {
+    font-size: 12px;
+  }
+}
