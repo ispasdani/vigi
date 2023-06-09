@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <section className={styles.homePage}>
       <MultiHomeBanners />
+      test
       <Feed />
     </section>
   );
