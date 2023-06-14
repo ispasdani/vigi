@@ -1,0 +1,111 @@
+.circleLetterShape {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-right: 10px;
+
+  p {
+    margin: 5px 0px;
+    .flickerLetter {
+      -webkit-animation: flickerLetter 1.5s linear infinite both;
+      animation: flickerLetter 1.5s linear infinite both;
+    }
+    .flickerLetterDelayTwo {
+      -webkit-animation: flickerLetter 3s linear infinite both;
+      animation: flickerLetter 3s linear infinite both;
+    }
+    .flickerLetterDelayThree {
+      -webkit-animation: flickerLetter 2s linear infinite both;
+      animation: flickerLetter 2s linear infinite both;
+    }
+    .flickerLetterDelayFour {
+      -webkit-animation: flickerLetter 5s linear infinite both;
+      animation: flickerLetter 5s linear infinite both;
+    }
+    .flickerLetterDelayFive {
+      -webkit-animation: flickerLetter 3.5s linear infinite both;
+      animation: flickerLetter 3.5s linear infinite both;
+    }
+    .flickerLetterDelaySix {
+      -webkit-animation: flickerLetter 2.6s linear infinite both;
+      animation: flickerLetter 2.6s linear infinite both;
+    }
+    .flickerLetterDelaySeven {
+      -webkit-animation: flickerLetter 4s linear infinite both;
+      animation: flickerLetter 4s linear infinite both;
+    }
+    .flickerLetterDelayEight {
+      -webkit-animation: flickerLetter 4.4s linear infinite both;
+      animation: flickerLetter 4.4s linear infinite both;
+    }
+    span {
+      margin: 5px;
+    }
+  }
+}
+
+@-webkit-keyframes flickerLetter {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 0;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 0;
+  }
+  47.99% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  49.01% {
+    opacity: 1;
+  }
+}
+@keyframes flickerLetter {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 0;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 0;
+  }
+  47.99% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  49.01% {
+    opacity: 1;
+  }
+}

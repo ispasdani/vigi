@@ -1,0 +1,22 @@
+.bannerText {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 10px 20px;
+  color: #ffffff;
+  span {
+    font-family: "Playfair Display SC", serif;
+    margin: 0px 5px;
+  }
+}
+
+@media (max-width: 761px) {
+  .bannerText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .bannerText {
+    font-size: 12px;
+  }
+}
