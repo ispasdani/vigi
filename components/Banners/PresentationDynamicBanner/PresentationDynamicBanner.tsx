@@ -1,5 +1,4 @@
 import styles from "@vx/components/Banners/PresentationDynamicBanner/styles.module.scss";
-import { BigLetterShape } from "@vx/components/LettersShapes/BigLetterShape/BigLetterShape";
 import { CircleLetterShape } from "@vx/components/LettersShapes/CircleLetterShape/CircleLetterShape";
 import { BannerText } from "@vx/components/Texts/BannerText/BannerText";
 import { BannerTitle } from "@vx/components/Texts/BannerTitle/BannerTitle";
